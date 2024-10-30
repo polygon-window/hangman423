@@ -1,7 +1,11 @@
 import random
 
-word_list = ['Apple', 'Banana', 'Strawberry', 'Pear', 'Kiwi']
-chosen_word = random.choice(word_list)
+
+def choose_word():
+    word_list = ['Apple', 'Banana', 'Strawberry', 'Pear', 'Kiwi']
+    chosen_word = random.choice(word_list)
+    return chosen_word
+
 while True:
     user_guess = input('Please guess a letter: ')
 
@@ -12,5 +16,4 @@ while True:
         user_guess = input('Oops! That is not a valid input.')
         continue
     
-print(word_list)
-print(chosen_word)
+
