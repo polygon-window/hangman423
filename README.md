@@ -11,3 +11,9 @@ Make a guess by entering a signal letter, you have five attempts to guess the wo
 - The final function checks if the character entered by the user in the 'ask_for_input()' function is present in the randomly selected word chosen by the 'choose_word()' function.
 
 
+## milestone_4:
+
+milestone_4 contains a class called Hangman. This class contains updated versions of the functions from milestone_3 as class methods.
+The ask_for_input() method now checks if the user input is a single alphabetical character, converts it to lowercase, then passes that character to the check_guess() method and adds it to the list of guesses made by the user.
+
+The check_guess() method then checks if that letter is in the randomly selected word, if so then the word_guessed list is updated to show the users progress in the game. If the letter is not in the word, the user will be prompted that their guess was incorrect and that they have lost a life.
